@@ -6,15 +6,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 .intro{
-    width: 100%;
-    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #2D25A0;
     color: white;
-    display: flex;
 }
-.title-full{
-    width: 50%;
-    padding: 8%;
+p{
+    color: grey;
+}
+.intro2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.intro-content{
+    width: 550px;
+    margin: 90px 0;
+}
+.intro-content img{
+    width: 100%;
 }
 .title{
     font-size: 64px;
@@ -58,6 +71,38 @@ body {
     border-radius: 10px;
     padding: 15px;
 }
-.last-section{
-    display: flex;
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 25%
+}
+.fab{
+    color: grey;
+    margin: 10px;
+    background-color: rgb(236, 236, 236);
+    padding: 7px;
+    border-radius: 50px;
+}
+#icon{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    padding:20px;
+    color: #777;
+}
+
+/* Media Queries */
+/* Mobile Device */
+
+@media only screen and (max-width:688px){
+    .intro-content{
+        padding: 0px 15px
+    }
+    .all-players{
+        display: grid;
+        grid-template-columns: 1fr;   
+        padding: 35px 16px;
+    }
 }
